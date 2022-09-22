@@ -1,7 +1,10 @@
-name: Build
+name: Build & Deploy
 
 on:
   pull_request:
+    branches:
+      - main
+  push:
     branches:
       - main
 
@@ -43,3 +46,24 @@ jobs:
         with:
           name: web-app-files
           path: ./build/web
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Download Web artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: web-app-files
+          path: ./build/web
+
+      - name: Deploy Web to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: flutterremotely
+          channelId: live
