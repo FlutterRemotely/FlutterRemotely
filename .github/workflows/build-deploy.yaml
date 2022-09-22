@@ -41,6 +41,9 @@ jobs:
           path: coverage/lcov.info
           min_coverage: 100
 
+      - name: Build Web
+        run: flutter build web
+
       - name: Upload production-ready web build files
         uses: actions/upload-artifact@v2
         with:
