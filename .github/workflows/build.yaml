@@ -34,7 +34,7 @@ jobs:
       - name: Check Code Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
         with:
-          exclude: "**/*.g.dart **/*.gen.dart **/l10n/*.dart **/l10n/**/*.dart **/*.freezed.dart"
+          exclude: "**/main.dart **/*.g.dart **/*.gen.dart **/l10n/*.dart **/l10n/**/*.dart **/*.freezed.dart"
           path: coverage/lcov.info
           min_coverage: 100
 
