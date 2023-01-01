@@ -13,14 +13,14 @@ body{
     padding-bottom: 80px;
 }
 .fixed-top{
-    background: #2bb6f6;
+    background: #FFFFFF;
 }
 .nav-item{
     padding: 0px 5px;
 }
 .nav-btn{
     padding: 10px 28px !important;
-    background-color: #2bb6f6;
+    background-color: #0675f7;
     color: #ffffff !important;
     border: none;
     border-radius: 33px;
@@ -32,7 +32,7 @@ body{
     background-color: #FFFFFF;
 }
 .header-details h6{
-    color: #2bb6f6;
+    color: #0675f7;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
@@ -46,7 +46,7 @@ body{
     margin-bottom: 19px;
 }
 .header-details h1 span{
-    color: #2bb6f6;
+    color: #0675f7;
 }
 .header-details p{
     font-size: 16px;
@@ -56,14 +56,14 @@ body{
 }
 .get-btn{
     padding: 12px 35px;
-    background-color: #00579b;
+    background-color: #0675f7;
     color: #ffffff;
     border: none;
     border-radius: 33px;
     transition: all .3s;
 }
 .get-btn:hover{
-    background-color: #2bb6f6;
+    background-color: #0675f7;
 }
 
 /* Cards section */
@@ -73,12 +73,12 @@ body{
 .cards-inner{
     padding: 50px 0px;
     text-align: center;
-    background: #c2ceff;
+    background: #0675f7;
     border-radius: 10px;
     transition: all .4s;
 }
 .cards-inner:hover{
-    background: #FFFFFF;
+    background: #0676f7c5;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
 }
 .cards-inner img{
@@ -89,14 +89,14 @@ body{
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    color: #413960;
+    color: #FFFFFF;
     margin-top: 20px;
     margin-bottom: 0;
 }
 .cards-inner p{
     font-size: 16px;
     line-height: 24px;
-    color: #585859;
+    color: #FFFFFF;
     margin-bottom: 0;
 }
 
@@ -133,14 +133,14 @@ body{
 }
 .buy-btn{
     padding: 8px 27px;
-    background-color: #2bb6f6;
+    background-color: #0675f7;
     color: #ffffff;
     border: none;
     border-radius: 33px;
     transition: all .3s;
 }
 .buy-btn:hover{
-    background-color: #2bb6f6;
+    background-color: #0675f7;
 }
 .card-footer{
     background: #ffffff;
@@ -160,7 +160,7 @@ body{
 }
 /* video area */
 .video-section{
-    background-color: #2bb6f6;
+    background-color: #FFFFFF;
     padding: 80px 0px;
     margin-bottom: 50px;
 }
@@ -199,7 +199,7 @@ body{
 }
 /* subscribe area */
 .subscribe-inner{
-    background: #2bb6f6;
+    background: #ffffff;
     padding: 50px 0px;
     border-radius: 20px;
     margin-top: 30px;
@@ -247,6 +247,11 @@ small{
     line-height: 30px;
     color: #CDCDCD;
 }
+
+#what{
+    margin-top:50px;
+  }
+  
 
 /* Responsive Css */
 @media only screen and (max-width: 1024px) {
